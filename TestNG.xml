@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Automation" parallel="tests" thread-count="1">
+    <parameter name="categoryItem" value=""/>
+    <parameter name="subCategoryItem" value=""/>
+
+<!--    <test name="Tehnomanija - Buy product - IT">-->
+<!--        <parameter name="categoryItem" value="IT &amp; Gaming"/>-->
+<!--        <parameter name="subCategoryItem" value="Konzole"/>-->
+<!--        <classes>-->
+<!--            <class name="AutomationTehnomanija"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Tehnomanija - Buy product - Bela tehnika">-->
+<!--        <parameter name="categoryItem" value="Bela tehnika"/>-->
+<!--        <parameter name="subCategoryItem" value="Kombinovani frižideri"/>-->
+<!--        <classes>-->
+<!--            <class name="AutomationTehnomanija"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+<!--    <test name="Tehnomanija - Buy product Klime">-->
+<!--        <parameter name="categoryItem" value="Klime i grejanje"/>-->
+<!--        <parameter name="subCategoryItem" value="Prečišćivači vazduha"/>-->
+
+<!--        <classes>-->
+<!--            <class name="AutomationTehnomanija"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="Tehnomanija - Buy product Telefonija">
+        <parameter name="categoryItem" value="Telefoni"/>
+        <parameter name="subCategoryItem" value="Smart telefoni"/>
+        <parameter name="filter" value="Interna memorija"/>
+        <parameter name="filterValue" value="39138"/>
+        <parameter name="filter2" value="Boja"/>
+        <parameter name="filterValue2" value="52826"/>
+
+
+
+        <classes>
+            <class name="AutomationTehnomanija"/>
+        </classes>
+    </test>
+
+    <test name="Tehnomanija - Buy product Bela Tehnika">
+        <parameter name="categoryItem" value="Bela tehnika"/>
+        <parameter name="subCategoryItem" value="Kombinovani frižideri"/>
+        <parameter name="filter" value="Zapremina zamrzivača"/>
+        <parameter name="filterValue" value="34767"/>
+        <parameter name="filter2" value="Proizvođač"/>
+        <parameter name="filterValue2" value="33891"/>
+
+
+
+        <classes>
+            <class name="AutomationTehnomanija"/>
+        </classes>
+    </test>
+</suite>
